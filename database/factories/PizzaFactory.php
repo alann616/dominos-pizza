@@ -39,8 +39,8 @@ class PizzaFactory extends Factory
         $toppings = array_unique($toppings);
 
         return [
-            'id' => round(11111, 99999),
-            'user_id' => round(1, 10),
+            'id' => rand(11111, 99999),
+            'user_id' => rand(1, 10),
             'size' => Arr::random(['small', 'medium', 'large', 'extra large']),
             'crust' => Arr::random(['normal', 'thin', 'garlic']),
             'toppings' => $toppings,
